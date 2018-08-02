@@ -1,11 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Scene, Entity} from 'aframe-react'
-import AFRAME from "aframe-core"
-import {component as draw} from "aframe-draw-component"
-import {component as textwrap} from "aframe-textwrap-component"
-AFRAME.registerComponent("draw", draw);
-AFRAME.registerComponent("textwrap", textwrap);
+// import AFRAME from "aframe-core"
+// import {component as draw} from "aframe-draw-component"
+// import {component as textwrap} from "aframe-textwrap-component"
+// AFRAME.registerComponent("draw", draw);
+// AFRAME.registerComponent("textwrap", textwrap);
 
 
 
