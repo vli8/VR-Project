@@ -2,11 +2,13 @@ import 'aframe';
 import 'aframe-animation-component';
 import 'aframe-particle-system-component';
 import 'babel-polyfill';
-import {Entity, Scene} from 'aframe-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter, Route, Link, Switch} from 'react-router-dom'
 import VRHomepage from './components/VR-presentaion'
+import {Provider} from 'react-redux'
+import store from './store'
+import Homepage from './components/Form'
 
 class App extends React.Component {
   
@@ -20,11 +22,14 @@ class App extends React.Component {
 
   render () {
     return (
-      <HashRouter>
-        <Switch>
-          <Route exact path = '/home' component = {VRHomepage}/>
-        </Switch>
-      </HashRouter>
+      <Provider store = {store}>
+        <HashRouter>
+          <Switch>
+            <Route exact path = '/' component = {Homepage}/>
+            <Route exact path = '/home' component = {VRHomepage}/>
+          </Switch>
+        </HashRouter>
+      </Provider>
     );
   }
 }

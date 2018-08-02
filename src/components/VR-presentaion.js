@@ -1,7 +1,8 @@
 import React from 'react'
 import {Entity, Scene} from 'aframe-react';
+import {connect} from 'react-redux'
 
-export default class VR extends React.Component {
+class VR extends React.Component {
     constructor(props) {
         super(props);
         this.state = {color: 'red'};
@@ -27,7 +28,7 @@ export default class VR extends React.Component {
             <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/>
             <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
             <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
-            <Entity text={{value: 'Hello, A-Frame React!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
+            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
 
             <Entity id="box"
             geometry={{primitive: 'box'}}
@@ -48,3 +49,11 @@ export default class VR extends React.Component {
         );
     }
 }
+
+const mapState = (state)=>{
+    return{
+        name: state.user.name
+    }
+}
+
+export default connect(mapState)(VR)
