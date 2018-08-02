@@ -21,6 +21,8 @@ class VR extends React.Component {
             <a-assets>
             <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
             <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
+            <img id = "wallGrey" src = "https://ucarecdn.com/9ad29c4d-2397-4ab9-8aaa-6f27152af272/" />
+            <img id = "netflix" src = "https://ucarecdn.com/3de19143-0fd3-4a35-9e4d-e5ba031a194f/"/>
             </a-assets>
 
             <Entity primitive="a-plane" src="#groundTexture" rotation="-90 0 0" height="100" width="100"/>
@@ -28,7 +30,11 @@ class VR extends React.Component {
             <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/>
             <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
             <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
-            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
+            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6}} position={{x: 0, y: 2, z: -1}} />
+            <Entity primitive = 'a-cylinder' position={{x:1, y:0, z: 2}} src = "#netflix" value = "Hello World">
+                <Entity text={{value: `Ben is helping`, align: 'center', height : 6, width:6}} position={{x: 0, y: 1, z: 0}} />
+            </Entity> 
+
 
             <Entity id="box"
             geometry={{primitive: 'box'}}
@@ -43,7 +49,7 @@ class VR extends React.Component {
             </Entity>
 
             <Entity primitive="a-camera">
-            <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
+                <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
             </Entity>
         </Scene>
         );
