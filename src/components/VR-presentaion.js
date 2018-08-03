@@ -32,12 +32,19 @@ class VR extends React.Component {
             <img id = "VanGogh" src = "Van-Gogh.jpg" />
             <img id = "Cezanne" src = "Cezanne.jpg" />
             <img id = "ManetPortrait" src = "Manet-Portrait.jpg" />
-            {/* <item id="Nefertiti" src="Nefertiti.obj"></item> */}
+            <img id = "Cezanne1" src = "Cezanne-Sainte-Victoire.jpg" />
+            <img id = "Dejeuner" src = "Dejeuner.jpg" />
+            <img id = "Lac" src = "Monet-Lac.jpg" />
+            <img id = "Garden" src = "Monet Garden.jpg" />
+
+            {/* <item id="Nefertiti" src="Nefertiti.obj"></item>
+            <item id="Nefertiti1" src="Nefertiti.mtl"></item> */}
             {/* <audio id = "sound" src ="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" /> */}
             <audio id = "sound1" src ="https://ia801002.us.archive.org/12/items/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.ogg" />
             </a-assets>
 
             {/* <Entity primitive="a-plane" src="#parquet" rotation="-90 -1 0" height="100" width="100"/> */}
+            {/* <Entity obj-model="obj: #Nefertiti; mtl: #Nefertiti1; width: 2; height: 2"/> */}
             <Entity primitive="a-light" type="ambient" color="#445451"/>
             <Entity primitive="a-light" type="point" intensity=".5" position="2 4 4"/>
             <Entity primitive = "a-sky" className="sky" src="#starSky" rotation="0 90 0"/>
