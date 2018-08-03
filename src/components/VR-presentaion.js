@@ -3,6 +3,7 @@ import {Entity, Scene} from 'aframe-react';
 import {connect} from 'react-redux'
 import 'aframe-room-component'
 import Room from './Room'
+import MovieRoom from './MovieRoom'
 
 class VR extends React.Component {
     constructor(props) {
@@ -36,6 +37,15 @@ class VR extends React.Component {
             <img id = "Dejeuner" src = "Dejeuner.jpg" />
             <img id = "Lac" src = "Monet-Lac.jpg" />
             <img id = "Garden" src = "Monet Garden.jpg" />
+            <img id = "MovieWall" src = "M-wall3.jpg" />            
+            <img id = "Boat" src = "dicaprio.jpg" />            
+            <img id = "Forrest" src = "M-Forrest.jpg" />
+            <img id = "GoodWill" src = "M-goodWill.jpg" />
+            <img id = "Hitch" src = "M-hitch.jpg" />
+            <img id = "Dicaprio" src = "M-titanic-Poster.jpg" />
+            <img id = "Pulp" src = "M-Pulp.jpg" />
+            <img id = "Sable" src = "https://ucarecdn.com/808d625d-3fdf-40d2-9cdf-959bcecb107b/" />
+            <video id="Titanic" autoplay loop="true" src="M-Titanic.mp4"></video>
 
             {/* <item id="Nefertiti" src="Nefertiti.obj"></item>
             <item id="Nefertiti1" src="Nefertiti.mtl"></item> */}
@@ -73,7 +83,7 @@ class VR extends React.Component {
                         material={{color: '#24CAFF'}}/>
             </Entity>
 
-                <Room />
+                {this.props.theme === "Art-Moderne"? <Room />: <MovieRoom />}
             <Entity primitive="a-camera" position ="0 0 -28" rotation=" 0 180 0" >
                 <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
             </Entity>
@@ -84,7 +94,8 @@ class VR extends React.Component {
 
 const mapState = (state)=>{
     return{
-        name: state.user.name
+        name: state.user.name,
+        theme: state.theme.selectedTheme
     }
 }
 
