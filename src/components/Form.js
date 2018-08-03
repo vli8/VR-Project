@@ -61,7 +61,7 @@ class Form extends React.Component{
                     <select name = "Theme" onChange = {this.handleChange}>
                         <option>Please select one theme </option>
                         <option value="Art-Moderne">Art-Moderne</option>
-                        <option value="Art-Ancien">Art-Ancien</option>
+                        <option value="Movie">Movie</option>
                     </select>
 
                     <select name = "Music" onChange = {this.handleChange}>
