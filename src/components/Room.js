@@ -27,7 +27,9 @@ class Room extends React.Component{
             <Entity primitive = "a-image" classname = "Dejeuner" src ="#Dejeuner" position="-12 3 -13.9" width="6" height="4" rotation="0 90 0"/>
             <Entity primitive = "a-image" classname = "Lac" src ="#Lac" position="12 3 -13.9" width="7" height="4" rotation="0 90 0"/>
             <Entity primitive = "a-image" classname = "Cezanne" src ="#Cezanne" position="12 3 3.1" width="7" height="4" rotation="0 90 0"/>
-            
+            <Entity id="myCameraPosition" position="0 0 50" />
+            <Entity primitive = "a-camera" classname = "camera" position = "3 0 0"/>
+                
                    <Entity className="floor" static-body
                 geometry="primitive: box; width: 25; height: 65; depth:0.5"
                 position="0 -0.25 0"
