@@ -23,10 +23,10 @@ class VR extends React.Component {
             <a-assets>
             <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
             <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
-            <img id = "wallGrey" src = "https://ucarecdn.com/9ad29c4d-2397-4ab9-8aaa-6f27152af272/" />
+            <img id = "wallGrey" src = "Wall Paint.jpg" />
             <img id = "netflix" src = "https://ucarecdn.com/3de19143-0fd3-4a35-9e4d-e5ba031a194f/"/>
             <img id = "starSky" src = "https://ucarecdn.com/1d9107f8-734c-48cc-b6e2-865af551a73a/"/>
-            <img id = "parquet" src = "https://ucarecdn.com/9662d212-6bb4-481f-b1b0-b666e1ccf65f/"/>
+            <img id = "parquet" src = "marble.jpg"/>
             <img id = "MonaLisa" src = "mona-lisa-framed.jpeg" />
             <img id = "VanGoghPortrait" src = "Van-Gogh-portrait.jpg" />
             <img id = "VanGogh" src = "Van-Gogh.jpg" />
@@ -74,7 +74,7 @@ class VR extends React.Component {
             </Entity>
 
                 <Room />
-            <Entity primitive="a-camera">
+            <Entity primitive="a-camera" position ="0 0 -28" rotation=" 0 180 0" >
                 <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
             </Entity>
         </Scene>
