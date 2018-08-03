@@ -16,23 +16,36 @@ class Room extends React.Component{
     render(){
         return(
         <Entity>
-            <Entity 
-                primitive = "a-box" height= "1" width = "10" depth ="10"
-                position="0 4 -8"
+                   <Entity className="floor" static-body
+                geometry="primitive: box; width: 25; height: 55; depth:0.5"
+                position="0 -0.25 0"
                 rotation="-90 0 0"
-                src = "#netflix"
-                message = "hello world">
-                    <Entity text={{value: `Ben is helping`, align: 'center', height : 6, width:6}} position={{x: 0, y: 1, z: 0}} />
-            </Entity>
-
-            <a-entity id="box" geometry="primitive: box" position="0 2 0" draw="background: #D7E8FF" textwrap="textAlign: center; x: 128; y: 128; text: Hello world!"></a-entity>
-
-
-            <Entity static-body
-                primitive = "a-box" height= "1" width = "10" depth ="10"
-                position="8 4 0"
-                rotation="0 0 -90"
-                src = "#wallGrey"/> 
+                material={`shader: flat; src:#parquet ; repeat: 15 10`}/>
+        <Entity className="backWall" static-body
+                geometry="primitive: box; width: 25; height: 12.5;"
+                position="0 -0 12.5"
+                rotation="180 180 0"
+                material={`shader: flat; src: #wallGrey ; repeat: 5 2`}/>
+         <Entity className="first frontWall" static-body
+                geometry="primitive: box; width: 10; height: 12.5;"
+                position="-7.5 -0 -17.5"
+                rotation="180 180 0"
+                material={`shader: flat; src: #wallGrey ; repeat: 5 2`}/> 
+        <Entity className="second frontWall" static-body
+                geometry="primitive: box; width: 10; height: 12.5;"
+                position="7.5 -0 -17.5"
+                rotation="180 180 0"
+                material={`shader: flat; src: #wallGrey ; repeat: 5 2`}/>      
+        <Entity className="leftWall" static-body
+                geometry="primitive: box; width: 35; height: 17; depth:0.5"
+                position="-12.5 -2.2 -5"
+                rotation="180 90 0"
+                material={`shader: flat; src: #wallGrey ; repeat: 5 1`}/>
+        <Entity className="rightWall" static-body
+                geometry="primitive: box; width: 35; height: 17; depth:0.5"
+                position="12.5 -2.2 -5"
+                rotation="180 90 0"
+                material={`shader: flat; src: #wallGrey; repeat: 5 1`}/>
         </Entity>
         )
     }
