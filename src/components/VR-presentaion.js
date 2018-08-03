@@ -27,17 +27,18 @@ class VR extends React.Component {
             <img id = "netflix" src = "https://ucarecdn.com/3de19143-0fd3-4a35-9e4d-e5ba031a194f/"/>
             <img id = "starSky" src = "https://ucarecdn.com/1d9107f8-734c-48cc-b6e2-865af551a73a/"/>
             <img id = "parquet" src = "https://ucarecdn.com/9662d212-6bb4-481f-b1b0-b666e1ccf65f/"/>
-            <audio id = "sound" src ="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" />
+            {/* <audio id = "sound" src ="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" /> */}
+            <audio id = "sound1" src ="https://ia801002.us.archive.org/12/items/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.ogg" />
             </a-assets>
 
-            <Entity primitive="a-plane" src="#parquet" rotation="-90 -1 0" height="100" width="100"/>
+            {/* <Entity primitive="a-plane" src="#parquet" rotation="-90 -1 0" height="100" width="100"/> */}
             <Entity primitive="a-light" type="ambient" color="#445451"/>
             <Entity primitive="a-light" type="point" intensity=".5" position="2 4 4"/>
             <Entity primitive = "a-sky" className="sky" src="#starSky" rotation="0 0 0"/>
             <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
             <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6}} position={{x: 0, y: 2, z: -1}} />
 
-            <Entity primitive= "a-sound" src= "#sound" autoplay = "true"/>
+            <Entity primitive= "a-sound" src= "#sound1" autoplay = "true"/>
 
 
             <Entity primitive = 'a-cylinder' position={{x:1, y:0, z: 2}} src = "#netflix">
