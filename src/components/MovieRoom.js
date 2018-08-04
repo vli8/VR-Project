@@ -1,30 +1,27 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Scene, Entity} from 'aframe-react'
+import {Entity} from 'aframe-react'
 
 
 
 class MovieRoom extends React.Component{
-    constructor(){
-        super()
-    }
     render(){
         return(
             <Entity>
-                <Entity primitive = "a-image" classname = "Forrest" src ="#Forrest" position="7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
-                <Entity primitive = "a-image" classname = "GoodWill" src ="#GoodWill" position="-7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
-                <Entity primitive = "a-image" classname = "Hitch" src ="#Hitch" position="-12 3 -13.9" width="6" height="4" rotation="0 90 0"/>
-                <Entity primitive = "a-image" classname = "Boat" src ="#Boat" position="12 3 -13.9" width="7" height="4" rotation="0 90 0"/>
-                <Entity primitive = "a-image" classname = "Pulp" src ="#Pulp" position="12 3 3.1" width="7" height="4" rotation="0 90 0"/>
+                <Entity primitive="a-image" classname="Forrest" src="#Forrest" position="7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
+                <Entity primitive="a-image" classname="GoodWill" src="#GoodWill" position="-7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
+                <Entity primitive="a-image" classname="Hitch" src="#Hitch" position="-12 3 -13.9" width="6" height="4" rotation="0 90 0"/>
+                <Entity primitive="a-image" classname="Boat" src="#Boat" position="12 3 -13.9" width="7" height="4" rotation="0 90 0"/>
+                <Entity primitive="a-image" classname="Pulp" src="#Pulp" position="12 3 3.1" width="7" height="4" rotation="0 90 0"/>
                 <Entity id="myCameraPosition" position="0 0 50" />
-                <Entity primitive = "a-camera" classname = "camera" position = "3 0 0"/>
-                <Entity primitive = "a-video" src = "#Titanic"  width="8" height="4" position="0 3 11.9"/>
+                <Entity primitive="a-camera" classname="camera" position="3 0 0"/>
+                <Entity primitive="a-video" src="#Titanic"  width="8" height="4" position="0 3 11.9"/>
 
-                <Entity className = "floor" static-body 
-                    geometry = "primitive: box; width:25; height:65; depth: 0.5"
-                    position = "0 -0.25 0"
-                    rotation = "-90 0 0"
-                    material = {`shader: flat; src:#Sable ; repeat: 15 10`}/>
+                <Entity className="floor" static-body 
+                    geometry="primitive: box; width:25; height:65; depth: 0.5"
+                    position="0 -0.25 0"
+                    rotation="-90 0 0"
+                    material={`shader: flat; src:#Sable ; repeat: 15 10`}/>
 
                 <Entity className="backWall" static-body
                     geometry="primitive: box; width: 25; height: 12.5;"
