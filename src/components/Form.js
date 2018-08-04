@@ -8,26 +8,26 @@ import { Button, Jumbotron } from 'react-bootstrap';
 class Form extends React.Component{
     constructor(){
         super()
-        this.state= {
+        this.state={
             name: '',
             theme: '',
             music: ''
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange=this.handleChange.bind(this)
+        this.handleSubmit=this.handleSubmit.bind(this)
     }
     async handleChange(event){
-        if(event.target.name === "Name"){
+        if(event.target.name==="Name"){
             await this.setState({
                 name: event.target.value
             })
         }
-        else if(event.target.name === 'Theme'){
+        else if(event.target.name==='Theme'){
             await this.setState({
                 theme: event.target.value
             })
         }
-        else if(event.target.name === 'Music'){
+        else if(event.target.name==='Music'){
             await this.setState({
                 music: event.target.value
             })
@@ -49,26 +49,26 @@ class Form extends React.Component{
                         This webXR experience was implemented with JavaScript, React, Redux, AFrame, and Aframe react. 
                     </p>
                     <p>
-                        <a href = "https://github.com/vli8/VR-Project"><Button bsStyle="primary">Learn more</Button></a>
+                        <a href="https://github.com/vli8/VR-Project"><Button bsStyle="primary">Learn more</Button></a>
                     </p>
                 </Jumbotron>
 
-                <form onSubmit = {this.handleSubmit}>
-                    <input placeholder="Name" name = 'Name'  onChange = {this.handleChange} />
+                <form onSubmit={this.handleSubmit}>
+                    <input placeholder="Name" name='Name'  onChange={this.handleChange} />
 
-                    <select name = "Theme" onChange = {this.handleChange}>
+                    <select name="Theme" onChange={this.handleChange}>
                         <option>Please select one theme </option>
                         <option value="Art-Moderne">Art-Moderne</option>
                         <option value="Movie">Movie</option>
                     </select>
 
-                    <select name = "Music" onChange = {this.handleChange}>
+                    <select name="Music" onChange={this.handleChange}>
                         <option>Please select the music </option>
                         <option value="Chopin">Chopin</option>
                         <option value="Bach">Bach</option>
                     </select>
 
-                    <Button bsStyle = "primary" type="submit"> submit </Button>
+                    <Button bsStyle="primary" type="submit"> submit </Button>
                 </form>
 
             </div>
@@ -76,14 +76,14 @@ class Form extends React.Component{
     }
 }
 
-const mapState = (state)=>{
+const mapState=(state)=>{
     return{
         name: state.user.name,
         theme: state.theme.selectedTheme,
         music: state.music.song
     }
 }
-const mapDispatch = (dispatch)=>{
+const mapDispatch=(dispatch)=>{
     return{
         setName: (name)=>dispatch(setName(name)),
         setTheme: (theme)=>dispatch(setTheme(theme)),

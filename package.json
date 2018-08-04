@@ -15,6 +15,7 @@
     "aframe-room-component": "^0.3.0",
     "aframe-textwrap-component": "^1.0.1",
     "babel-polyfill": "^6.3.14",
+    "ignore-warnings": "^0.1.0",
     "material-ui": "next",
     "material-ui-icons": "1.0.0-alpha.19",
     "prop-types": "^15.5.10",
