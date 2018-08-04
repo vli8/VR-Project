@@ -8,6 +8,7 @@
     "aframe-core": "^0.1.6",
     "aframe-draw-component": "^1.5.0",
     "aframe-extras": "^4.1.2",
+    "aframe-look-at-component": "^0.7.0",
     "aframe-maze-component": "^0.1.25",
     "aframe-particle-system-component": "^1.0.8",
     "aframe-react": "^4.0.x",
