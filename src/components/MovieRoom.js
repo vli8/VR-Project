@@ -1,11 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Scene, Entity} from 'aframe-react'
-// import AFRAME from "aframe-core"
-// import {component as draw} from "aframe-draw-component"
-// import {component as textwrap} from "aframe-textwrap-component"
-// AFRAME.registerComponent("draw", draw);
-// AFRAME.registerComponent("textwrap", textwrap);
 
 
 
@@ -23,7 +18,7 @@ class MovieRoom extends React.Component{
                 <Entity primitive = "a-image" classname = "Pulp" src ="#Pulp" position="12 3 3.1" width="7" height="4" rotation="0 90 0"/>
                 <Entity id="myCameraPosition" position="0 0 50" />
                 <Entity primitive = "a-camera" classname = "camera" position = "3 0 0"/>
-                <Entity primitive = "a-video" src = "#Titanic"  width="8" height="4" position="0 3 1"/>
+                <Entity primitive = "a-video" src = "#Titanic"  width="8" height="4" position="0 3 11.9"/>
 
                 <Entity className = "floor" static-body 
                     geometry = "primitive: box; width:25; height:65; depth: 0.5"

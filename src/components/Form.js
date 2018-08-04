@@ -32,14 +32,12 @@ class Form extends React.Component{
                 music: event.target.value
             })
         }
-        console.log('LOCAL STATE: ',this.state)
     }
     async handleSubmit(event){
         event.preventDefault();
         await this.props.setName(this.state.name)
         await this.props.setTheme(this.state.theme)
         await this.props.setMusic(this.state.music)
-        console.log( "Store music: ", this.props.music, "Store name: ", this.props.name, "Store theme: ", this.props.theme)
         this.props.history.push('/home')
     }
     render(){
@@ -67,7 +65,7 @@ class Form extends React.Component{
                     <select name = "Music" onChange = {this.handleChange}>
                         <option>Please select the music </option>
                         <option value="Chopin">Chopin</option>
-                        <option value="Mozart">Mozart</option>
+                        <option value="Bach">Bach</option>
                     </select>
 
                     <Button bsStyle = "primary" type="submit"> submit </Button>
