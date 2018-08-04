@@ -58,7 +58,7 @@ class VR extends React.Component {
             <Entity primitive = "a-sky" className="sky" src="#starSky" rotation="0 90 0"/>
             
             <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
-            <Entity text={{value: `Thanks For Visiting ${this.props.name}!`, align: 'center', height : 6, width:6}} position={{x: 0, y: 2, z: -20}} look-at="[camera]"  />
+            <Entity text={{value: `Thanks For Visiting ${this.props.name}!`, align: 'center', height : 6, width:6}} position={{x: 0, y: 2, z: -22}} />
 
             {this.props.music !== 'Bach'? <Entity primitive= "a-sound" src= "#sound1" autoplay = "true"/>:  <Entity primitive= "a-sound" src= "#sound2" autoplay = "true"/> }
 
@@ -76,10 +76,10 @@ class VR extends React.Component {
             </Entity>
 
                 {this.props.theme === "Art-Moderne"? <Room />: <MovieRoom />}
-            <Entity primitive="a-camera" position ="0 0 -28" rotation=" 0 180 0" >
+            <Entity primitive="a-camera" position ="0 0 -28" rotation=" 0 180 0"   id = "cameraStarter">
                 <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
             </Entity>
-            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6, side: "back"}} position={{x: 0, y: 2, z: -20}} rotate = "0 360 0"look-at="camera"  />
+            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6, side: "front"}} position={{x: 0, y: 2, z: -23}} rotate = "0 360 0"look-at="#cameraStarter"  />
         </Scene>
         );
     }
