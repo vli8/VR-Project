@@ -26,7 +26,7 @@ class Room extends React.Component{
 
                         <Entity primitive = "a-image" classname = "Mona Lisa" src ="#MonaLisa" position="0 3 11.9" width="2.3" height="4" rotation="0 180 0"
                                 events={{click: this.handleClick}}>
-                                <Entity primitive ="a-sound" src = "#monaDescription" autoplay= {this.state.play} />
+                                <Entity primitive ="a-sound" src = "#monaDescription" autoplay= {this.state.play}/>
                         </Entity>
                         <Entity primitive = "a-image" classname = "VanGoghPortrait" src ="#VanGoghPortrait" position="6 3 11.9" width="2.7" height="4" rotation="0 180 0"/>
                         <Entity primitive = "a-image" classname = "Cezanne1" src ="#Cezanne1" position="7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
