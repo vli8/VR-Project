@@ -10,7 +10,7 @@ class MovieRoom extends React.Component{
             <Entity>
                 <Entity primitive="a-image" classname="Forrest" src="#Forrest" position="7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
                 <Entity primitive="a-image" classname="GoodWill" src="#GoodWill" position="-7 3 -6.1" width="5" height="4" rotation="0 180 0"/>
-                <Entity primitive="a-image" classname="Hitch" src="#Hitch" position="-12 3 -13.9" width="6" height="4" rotation="0 90 0"/>
+                <Entity primitive="a-image" classname="Hitch" src="#Hitch" position="-12 3 -13.9" width="6" height="4" rotation="0 90 0"  sound="src:#kiss ; on: click"/>
                 <Entity primitive="a-image" classname="Boat" src="#Boat" position="12 3 -13.9" width="7" height="4" rotation="0 90 0"/>
                 <Entity primitive="a-image" classname="Pulp" src="#Pulp" position="12 3 3.1" width="7" height="4" rotation="0 90 0"/>
                 <Entity id="myCameraPosition" position="0 0 50" />
