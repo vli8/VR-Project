@@ -16,8 +16,8 @@ class MovieRoom extends React.Component{
                 <Entity id="myCameraPosition" position="0 0 50" />
                 <Entity primitive="a-camera" classname="camera" position="3 0 0"/>
 
-                <Entity primitive="a-video" src="#Titanic" autoPlay  width="8" height="4" position="0 3 11.9"/>
-                <video crossOrigin="anonymous" id="Titanic" autoPlay loop="true" src="M-Titanic.mp4"></video>
+                <Entity primitive="a-video" src="#Anchor" autoPlay  width="8" height="4" position="0 3 11.9"/>
+                <video crossOrigin="anonymous" id="Anchor" autoPlay loop="true" src="Anchor.mp4"></video>
 
 
                 <Entity primitive="a-image" classname="instructions" src="#instructions" position="6.5 3 -23.1" width="5" height="4" rotation="0 180 0"/>
