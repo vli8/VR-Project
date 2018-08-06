@@ -46,6 +46,7 @@ class VR extends React.Component {
             <img crossOrigin="anonymous" alt="descriptiveImage" id="Dicaprio" src="M-titanic-Poster.jpg" />
             <img crossOrigin="anonymous" alt="descriptiveImage" id="Pulp" src="M-Pulp.jpg" />
             <img crossOrigin="anonymous" alt="descriptiveImage" id="Sable" src="https://ucarecdn.com/808d625d-3fdf-40d2-9cdf-959bcecb107b/" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="instructions" src="Instructions.jpg" />
             {/* <video crossOrigin="anonymous" id="Titanic" autoPlay loop="true" src="M-Titanic.mp4"></video> */}
 
             <audio crossOrigin="anonymous"id="monaDescription" src="monalisaDescription.mp3"/>
