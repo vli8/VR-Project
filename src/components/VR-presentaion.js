@@ -47,6 +47,8 @@ class VR extends React.Component {
             <img alt="descriptiveImage" id="Pulp" src="M-Pulp.jpg" />
             <img alt="descriptiveImage" id="Sable" src="https://ucarecdn.com/808d625d-3fdf-40d2-9cdf-959bcecb107b/" />
             <video id="Titanic" autoplay loop="true" src="M-Titanic.mp4"></video>
+            <img  id="instructions" src="instructions.jpg" />
+            {/* <item id="skull" src="scene.gltf"></item> */}
 
             <audio id="monaDescription" src="monalisaDescription.mp3"/>
             <audio id="sound2" src="Bach.mp3"/>
