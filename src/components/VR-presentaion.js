@@ -21,7 +21,7 @@ class VR extends React.Component {
 
     render () {
         return (
-        <Scene stats>
+        <Scene >
             <a-assets>
             <img crossOrigin="anonymous " alt="descriptiveImage" id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
             <img crossOrigin="anonymous"alt="descriptiveImage" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
