@@ -16,7 +16,7 @@ class MovieRoom extends React.Component{
                 <Entity id="myCameraPosition" position="0 0 50" />
                 <Entity primitive="a-camera" classname="camera" position="3 0 0"/>
                 <Entity primitive="a-video" src="#Titanic"  width="8" height="4" position="0 3 11.9"/>
-
+                <Entity primitive="a-image" classname="instructions" src="#instructions" position="6.5 3 -23.1" width="5" height="4" rotation="0 180 0"/>
                 <Entity className="floor" static-body 
                     geometry="primitive: box; width:25; height:65; depth: 0.5"
                     position="0 -0.25 0"
