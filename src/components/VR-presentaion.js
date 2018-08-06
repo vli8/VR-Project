@@ -23,34 +23,34 @@ class VR extends React.Component {
         return (
         <Scene stats>
             <a-assets>
-            <img alt="descriptiveImage" id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
-            <img alt="descriptiveImage" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
-            <img alt="descriptiveImage" id="wallGrey" src="Wall Paint.jpg" />
-            <img alt="descriptiveImage" id="netflix" src="https://ucarecdn.com/3de19143-0fd3-4a35-9e4d-e5ba031a194f/"/>
-            <img alt="descriptiveImage" id="starSky" src="https://ucarecdn.com/1d9107f8-734c-48cc-b6e2-865af551a73a/"/>
-            <img alt="descriptiveImage" id="parquet" src="marble.jpg"/>
-            <img alt="descriptiveImage" id="MonaLisa" src="mona-lisa-framed.jpeg" />
-            <img alt="descriptiveImage" id="VanGoghPortrait" src="Van-Gogh-portrait.jpg" />
-            <img alt="descriptiveImage" id="VanGogh" src="Van-Gogh.jpg" />
-            <img alt="descriptiveImage" id="Cezanne" src="Cezanne.jpg" />
-            <img alt="descriptiveImage" id="ManetPortrait" src="Manet-Portrait.jpg" />
-            <img alt="descriptiveImage" id="Cezanne1" src="Cezanne-Sainte-Victoire.jpg" />
-            <img alt="descriptiveImage" id="Dejeuner" src="Dejeuner.jpg" />
-            <img alt="descriptiveImage" id="Lac" src="Monet-Lac.jpg" />
-            <img alt="descriptiveImage" id="Garden" src="Monet Garden.jpg" />
-            <img alt="descriptiveImage" id="MovieWall" src="M-wall3.jpg" />            
-            <img alt="descriptiveImage" id="Boat" src="dicaprio.jpg" />            
-            <img alt="descriptiveImage" id="Forrest" src="M-Forrest.jpg" />
-            <img alt="descriptiveImage" id="GoodWill" src="M-goodWill.jpg" />
-            <img alt="descriptiveImage" id="Hitch" src="M-hitch.jpg" />
-            <img alt="descriptiveImage" id="Dicaprio" src="M-titanic-Poster.jpg" />
-            <img alt="descriptiveImage" id="Pulp" src="M-Pulp.jpg" />
-            <img alt="descriptiveImage" id="Sable" src="https://ucarecdn.com/808d625d-3fdf-40d2-9cdf-959bcecb107b/" />
-            <video id="Titanic" autoplay loop="true" src="M-Titanic.mp4"></video>
+            <img crossOrigin="anonymous " alt="descriptiveImage" id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
+            <img crossOrigin="anonymous"alt="descriptiveImage" id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
+            <img crossOrigin="anonymous"alt="descriptiveImage" id="wallGrey" src="Wall Paint.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="netflix" src="https://ucarecdn.com/3de19143-0fd3-4a35-9e4d-e5ba031a194f/"/>
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="starSky" src="https://ucarecdn.com/1d9107f8-734c-48cc-b6e2-865af551a73a/"/>
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="parquet" src="marble.jpg"/>
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="MonaLisa" src="mona-lisa-framed.jpeg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="VanGoghPortrait" src="Van-Gogh-portrait.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="VanGogh" src="Van-Gogh.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Cezanne" src="Cezanne.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="ManetPortrait" src="Manet-Portrait.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Cezanne1" src="Cezanne-Sainte-Victoire.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Dejeuner" src="Dejeuner.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Lac" src="Monet-Lac.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Garden" src="Monet Garden.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="MovieWall" src="M-wall3.jpg" />            
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Boat" src="dicaprio.jpg" />            
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Forrest" src="M-Forrest.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="GoodWill" src="M-goodWill.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Hitch" src="M-hitch.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Dicaprio" src="M-titanic-Poster.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Pulp" src="M-Pulp.jpg" />
+            <img crossOrigin="anonymous" alt="descriptiveImage" id="Sable" src="https://ucarecdn.com/808d625d-3fdf-40d2-9cdf-959bcecb107b/" />
+            {/* <video crossOrigin="anonymous" id="Titanic" autoPlay loop="true" src="M-Titanic.mp4"></video> */}
 
-            <audio id="monaDescription" src="monalisaDescription.mp3"/>
-            <audio id="sound2" src="Bach.mp3"/>
-            <audio id="sound1" src="https://ia801002.us.archive.org/12/items/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.ogg" />
+            <audio crossOrigin="anonymous"id="monaDescription" src="monalisaDescription.mp3"/>
+            <audio crossOrigin="anonymous" id="sound2" src="Bach.mp3"/>
+            <audio  crossOrigin="anonymous"id="sound1" src="https://ia801002.us.archive.org/12/items/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.ogg" />
             </a-assets>
 
             <Entity primitive="a-light" type="ambient" color="#445451"/>
@@ -69,6 +69,7 @@ class VR extends React.Component {
                 animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '1.1 1.1 1.1'}}
                 position={{x: 0, y: 1, z: -26}}
                 static body
+                src="#monaDescription; on: click"
                 events={{click: this.changeColor.bind(this)}}>
                     <Entity animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '2 2 2'}}
                             geometry={{primitive: 'box', depth: 0.2, height: 0.2, width: 0.2}}
