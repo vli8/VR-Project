@@ -51,6 +51,7 @@ class VR extends React.Component {
 
             <audio crossOrigin="anonymous"id="monaDescription" src="monalisaDescription.mp3"/>
             <audio crossOrigin="anonymous" id="sound2" src="Bach.mp3"/>
+            <audio crossOrigin="anonymous" id="kiss" src="kissScene.mp3"/>
             <audio  crossOrigin="anonymous"id="sound1" src="https://ia801002.us.archive.org/12/items/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.ogg" />
             </a-assets>
 
