@@ -70,7 +70,6 @@ class VR extends React.Component {
                 animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '1.1 1.1 1.1'}}
                 position={{x: 0, y: 1, z: -26}}
                 static body
-                src="#monaDescription; on: click"
                 events={{click: this.changeColor.bind(this)}}>
                     <Entity animation__scale={{property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '2 2 2'}}
                             geometry={{primitive: 'box', depth: 0.2, height: 0.2, width: 0.2}}
@@ -81,7 +80,7 @@ class VR extends React.Component {
             <Entity primitive="a-camera" position="0 0 -28" rotation=" 0 180 0"   id="cameraStarter">
                 <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
             </Entity>
-            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6, side: "front"}} position={{x: 0, y: 2, z: -23}} rotate="0 360 0"look-at="#cameraStarter"  />
+            <Entity text={{value: `Hi ${this.props.name}!`, align: 'center', height : 6, width:6}} position={{x: 0, y: 2, z: -23}} rotate="0 360 0"look-at="#cameraStarter"  />
         </Scene>
         );
     }
